@@ -1,0 +1,13 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Plain Description -->
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.data.global.title }}</title>
+  <meta name="description" content="{% if page.summary %}{{page.summary}}{% else %}{{site.data.global.description}}{% endif %}">
+  <link rel="icon" type="image/png" href={{ "/favicon.png" | prepend: site.baseurl }}>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href={{ "/assets/css/style.css" | prepend: site.baseurl }}>
+
+</head>
